@@ -1,0 +1,4 @@
+source;share/roomba_description/local_setup.bash
+source;share/roomba_description/local_setup.dsv
+source;share/roomba_description/local_setup.sh
+source;share/roomba_description/local_setup.zsh

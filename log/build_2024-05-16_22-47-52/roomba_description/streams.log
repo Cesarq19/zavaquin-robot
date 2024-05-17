@@ -1,0 +1,46 @@
+[0.007s] Invoking command in '/home/jonnysamz/zavaquin-robot/build/roomba_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jonnysamz/zavaquin-robot/src/robot_description -DCMAKE_INSTALL_PREFIX=/home/jonnysamz/zavaquin-robot/install/roomba_description
+[0.021s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.155s] -- Found urdf: 2.6.0 (/opt/ros/humble/share/urdf/cmake)
+[0.259s] -- Configuring done
+[0.261s] -- Generating done
+[0.263s] -- Build files have been written to: /home/jonnysamz/zavaquin-robot/build/roomba_description
+[0.267s] Invoked command in '/home/jonnysamz/zavaquin-robot/build/roomba_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jonnysamz/zavaquin-robot/src/robot_description -DCMAKE_INSTALL_PREFIX=/home/jonnysamz/zavaquin-robot/install/roomba_description
+[0.270s] Invoking command in '/home/jonnysamz/zavaquin-robot/build/roomba_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jonnysamz/zavaquin-robot/build/roomba_description -- -j4 -l4
+[0.304s] Invoked command in '/home/jonnysamz/zavaquin-robot/build/roomba_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jonnysamz/zavaquin-robot/build/roomba_description -- -j4 -l4
+[0.333s] Invoking command in '/home/jonnysamz/zavaquin-robot/build/roomba_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jonnysamz/zavaquin-robot/build/roomba_description
+[0.340s] -- Install configuration: ""
+[0.340s] -- Installing: /home/jonnysamz/zavaquin-robot/install/roomba_description/share/roomba_description/meshes
+[0.340s] -- Installing: /home/jonnysamz/zavaquin-robot/install/roomba_description/share/roomba_description/meshes/laser_link.STL
+[0.341s] -- Installing: /home/jonnysamz/zavaquin-robot/install/roomba_description/share/roomba_description/meshes/camera_link.STL
+[0.342s] -- Installing: /home/jonnysamz/zavaquin-robot/install/roomba_description/share/roomba_description/meshes/wheel_right_link.STL
+[0.342s] -- Installing: /home/jonnysamz/zavaquin-robot/install/roomba_description/share/roomba_description/meshes/base_link.STL
+[0.342s] -- Installing: /home/jonnysamz/zavaquin-robot/install/roomba_description/share/roomba_description/meshes/wheel_left_link.STL
+[0.342s] -- Installing: /home/jonnysamz/zavaquin-robot/install/roomba_description/share/roomba_description/meshes/imu_link.STL
+[0.349s] -- Installing: /home/jonnysamz/zavaquin-robot/install/roomba_description/share/roomba_description/meshes/caster_wheel_link.STL
+[0.350s] -- Installing: /home/jonnysamz/zavaquin-robot/install/roomba_description/share/roomba_description/rviz
+[0.350s] -- Installing: /home/jonnysamz/zavaquin-robot/install/roomba_description/share/roomba_description/rviz/description.rviz
+[0.350s] -- Installing: /home/jonnysamz/zavaquin-robot/install/roomba_description/share/roomba_description/rviz/model.rviz
+[0.350s] -- Installing: /home/jonnysamz/zavaquin-robot/install/roomba_description/share/roomba_description/urdf
+[0.350s] -- Installing: /home/jonnysamz/zavaquin-robot/install/roomba_description/share/roomba_description/urdf/ZavaQuin.urdf
+[0.350s] -- Installing: /home/jonnysamz/zavaquin-robot/install/roomba_description/share/roomba_description/urdf/ZavaQuin.csv
+[0.350s] -- Installing: /home/jonnysamz/zavaquin-robot/install/roomba_description/share/roomba_description/worlds
+[0.351s] -- Installing: /home/jonnysamz/zavaquin-robot/install/roomba_description/share/roomba_description/worlds/ramel.world
+[0.351s] -- Installing: /home/jonnysamz/zavaquin-robot/install/roomba_description/share/roomba_description/launch
+[0.351s] -- Installing: /home/jonnysamz/zavaquin-robot/install/roomba_description/share/roomba_description/launch/gazebo.launch.py
+[0.351s] -- Installing: /home/jonnysamz/zavaquin-robot/install/roomba_description/share/roomba_description/launch/display.launch.py
+[0.351s] -- Installing: /home/jonnysamz/zavaquin-robot/install/roomba_description/share/ament_index/resource_index/package_run_dependencies/roomba_description
+[0.351s] -- Installing: /home/jonnysamz/zavaquin-robot/install/roomba_description/share/ament_index/resource_index/parent_prefix_path/roomba_description
+[0.351s] -- Installing: /home/jonnysamz/zavaquin-robot/install/roomba_description/share/roomba_description/environment/ament_prefix_path.sh
+[0.351s] -- Installing: /home/jonnysamz/zavaquin-robot/install/roomba_description/share/roomba_description/environment/ament_prefix_path.dsv
+[0.351s] -- Installing: /home/jonnysamz/zavaquin-robot/install/roomba_description/share/roomba_description/environment/path.sh
+[0.352s] -- Installing: /home/jonnysamz/zavaquin-robot/install/roomba_description/share/roomba_description/environment/path.dsv
+[0.352s] -- Installing: /home/jonnysamz/zavaquin-robot/install/roomba_description/share/roomba_description/local_setup.bash
+[0.352s] -- Installing: /home/jonnysamz/zavaquin-robot/install/roomba_description/share/roomba_description/local_setup.sh
+[0.352s] -- Installing: /home/jonnysamz/zavaquin-robot/install/roomba_description/share/roomba_description/local_setup.zsh
+[0.352s] -- Installing: /home/jonnysamz/zavaquin-robot/install/roomba_description/share/roomba_description/local_setup.dsv
+[0.352s] -- Installing: /home/jonnysamz/zavaquin-robot/install/roomba_description/share/roomba_description/package.dsv
+[0.352s] -- Installing: /home/jonnysamz/zavaquin-robot/install/roomba_description/share/ament_index/resource_index/packages/roomba_description
+[0.353s] -- Installing: /home/jonnysamz/zavaquin-robot/install/roomba_description/share/roomba_description/cmake/roomba_descriptionConfig.cmake
+[0.354s] -- Installing: /home/jonnysamz/zavaquin-robot/install/roomba_description/share/roomba_description/cmake/roomba_descriptionConfig-version.cmake
+[0.354s] -- Installing: /home/jonnysamz/zavaquin-robot/install/roomba_description/share/roomba_description/package.xml
+[0.356s] Invoked command in '/home/jonnysamz/zavaquin-robot/build/roomba_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jonnysamz/zavaquin-robot/build/roomba_description
