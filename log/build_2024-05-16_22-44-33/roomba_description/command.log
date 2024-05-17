@@ -1,2 +1,0 @@
-Invoking command in '/home/jonnysamz/zavaquin-robot/build/roomba_description': /usr/bin/cmake /home/jonnysamz/zavaquin-robot/src/robot_description -DCMAKE_INSTALL_PREFIX=/home/jonnysamz/zavaquin-robot/install/roomba_description
-Invoked command in '/home/jonnysamz/zavaquin-robot/build/roomba_description' returned '1': /usr/bin/cmake /home/jonnysamz/zavaquin-robot/src/robot_description -DCMAKE_INSTALL_PREFIX=/home/jonnysamz/zavaquin-robot/install/roomba_description

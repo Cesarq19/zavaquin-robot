@@ -11,14 +11,14 @@ from launch_ros.parameter_descriptions import ParameterValue
 # Función principal para generar la descripción del lanzamiento
 def generate_launch_description():
     # Directorios relacionados con la descripción de Roomba y Gazebo
-    roomba_description_dir = get_package_share_directory("roomba_description")
-    roomba_description_share = os.path.join(get_package_prefix("roomba_description"), "share")
+    roomba_description_dir = get_package_share_directory("robot_description")
+    roomba_description_share = os.path.join(get_package_prefix("robot_description"), "share")
     gazebo_ros_dir = get_package_share_directory("gazebo_ros")
 
     # Argumento de lanzamiento para especificar la ubicación del archivo URDF del robot
     model_arg = DeclareLaunchArgument(
-        name="roomba",
-        default_value=os.path.join(roomba_description_dir, "urdf", "roomba_description.urdf.xacro"),
+        name="ZavaQuin",
+        default_value=os.path.join(roomba_description_dir, "urdf", "ZavaQuin.urdf.xacro"),
         description="Absolute path to robot urdf file"
     )
 
@@ -35,7 +35,7 @@ def generate_launch_description():
     env_var = SetEnvironmentVariable("GAZEBO_MODEL_PATH", roomba_description_share)
 
     # Configuración del parámetro del nodo del robot_state_publisher
-    robot_description = ParameterValue(Command(["xacro ", LaunchConfiguration("roomba")]), value_type=str)
+    robot_description = ParameterValue(Command(["xacro ", LaunchConfiguration("ZavaQuin")]), value_type=str)
     robot_state_publisher_node = Node(
         package="robot_state_publisher",
         executable="robot_state_publisher",

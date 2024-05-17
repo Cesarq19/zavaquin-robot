@@ -11,17 +11,17 @@ from launch_ros.parameter_descriptions import ParameterValue
 # Función principal para generar la descripción del lanzamiento
 def generate_launch_description():
     # Directorio de descripción de Roomba
-    roomba_description_dir = get_package_share_directory("roomba_description")
+    roomba_description_dir = get_package_share_directory("robot_description")
     
     # Argumento de lanzamiento para especificar la ubicación del archivo URDF del robot
     model_arg = DeclareLaunchArgument(
-        name="roomba",
-        default_value=os.path.join(roomba_description_dir, "urdf", "roomba_description.urdf.xacro"),
+        name="ZavaQuin",
+        default_value=os.path.join(roomba_description_dir, "urdf", "ZavaQuin.urdf.xacro"),
         description="Absolute path to robot urdf file"
     )
     
     # Configuración del parámetro del nodo del robot_state_publisher
-    robot_description = ParameterValue(Command(["xacro ", LaunchConfiguration("roomba")]), value_type=str)
+    robot_description = ParameterValue(Command(["xacro ", LaunchConfiguration("ZavaQuin")]), value_type=str)
     
     # Nodo para publicar el estado del robot
     robot_state_publisher_node = Node(
