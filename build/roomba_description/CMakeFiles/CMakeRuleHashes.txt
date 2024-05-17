@@ -1,2 +1,0 @@
-# Hashes of file build rules.
-13e349d9885d5d06e27af2cec987e1c0 CMakeFiles/roomba_description_uninstall
