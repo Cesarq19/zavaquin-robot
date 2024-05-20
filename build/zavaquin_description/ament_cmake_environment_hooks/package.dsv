@@ -1,0 +1,4 @@
+source;share/zavaquin_description/local_setup.bash
+source;share/zavaquin_description/local_setup.dsv
+source;share/zavaquin_description/local_setup.sh
+source;share/zavaquin_description/local_setup.zsh
