@@ -1,2 +1,0 @@
-Invoking command in '/home/jonnysamz/zavaquin-robot/build/robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/jonnysamz/zavaquin-robot/src/zavaquin_description -DCMAKE_INSTALL_PREFIX=/home/jonnysamz/zavaquin-robot/install/robot_description
-Invoked command in '/home/jonnysamz/zavaquin-robot/build/robot_description' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/jonnysamz/zavaquin-robot/src/zavaquin_description -DCMAKE_INSTALL_PREFIX=/home/jonnysamz/zavaquin-robot/install/robot_description

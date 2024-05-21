@@ -1,4 +1,0 @@
-Invoking command in '/home/jonnysamz/zavaquin-robot/build/zavaquin_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jonnysamz/zavaquin-robot/build/zavaquin_description -- -j4 -l4
-Invoked command in '/home/jonnysamz/zavaquin-robot/build/zavaquin_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jonnysamz/zavaquin-robot/build/zavaquin_description -- -j4 -l4
-Invoking command in '/home/jonnysamz/zavaquin-robot/build/zavaquin_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/jonnysamz/zavaquin-robot/build/zavaquin_description
-Invoked command in '/home/jonnysamz/zavaquin-robot/build/zavaquin_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/jonnysamz/zavaquin-robot/build/zavaquin_description
