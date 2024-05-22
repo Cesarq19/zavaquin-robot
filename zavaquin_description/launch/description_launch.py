@@ -56,7 +56,7 @@ def generate_launch_description():
     
     # Start robot state publisher
     start_robot_state_publisher_cmd = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource([os.path.join(zavaquin_description_dir, 'launch', 'robot_state_publisher_launch.py')]), 
+        PythonLaunchDescriptionSource([os.path.join(zavaquin_description_dir, 'launch', 'robot_state_publisher.py')]), 
         launch_arguments={'use_sim_time': use_sim_time, 'urdf_model': urdf_model}.items())
 
     # Launch RViz

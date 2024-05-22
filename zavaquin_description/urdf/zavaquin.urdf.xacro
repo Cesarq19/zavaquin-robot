@@ -5,6 +5,14 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="zavaquin">
   <xacro:arg name="use_ros2_control" default="true"/>
   <xacro:arg name="sim_mode" default="false"/>
+  
+  <material name="dark">
+    <color rgba="0.01960784313 0.01960784313 0.01960784313 1.0" />
+  </material>
+
+  <material name="red">
+    <color rgba="0.89019607843 0.14509803921 0.12156862745 1.0" />
+  </material> 
 
   <link name="base_footprint"/>
 
@@ -31,9 +39,7 @@
       <geometry>
         <mesh filename="package://zavaquin_description/meshes/base_link.STL" />
       </geometry>
-      <material name="">
-        <color rgba="0.749019607843137 0.749019607843137 0.749019607843137 1" />
-      </material>
+      <material name="red" />
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
@@ -60,9 +66,7 @@
       <geometry>
         <mesh filename="package://zavaquin_description/meshes/wheel_left_link.STL" />
       </geometry>
-      <material name="">
-        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
-      </material>
+      <material name="dark" />
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
@@ -96,9 +100,7 @@
       <geometry>
         <mesh filename="package://zavaquin_description/meshes/wheel_right_link.STL" />
       </geometry>
-      <material name="">
-        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
-      </material>
+      <material name="dark" />
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
@@ -132,9 +134,7 @@
       <geometry>
         <mesh filename="package://zavaquin_description/meshes/caster_wheel_link.STL" />
       </geometry>
-      <material name="">
-        <color rgba="0.749019607843137 0.749019607843137 0.749019607843137 1" />
-      </material>
+      <material name="dark" />
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
@@ -165,7 +165,7 @@
     <minDepth>0.001</minDepth>
     <maxVel>0.1</maxVel>
     <fdir1>1 0 0</fdir1>
-    <material>Gazebo/FlatBlack</material>
+    <material>Gazebo/Flatdark</material>
   </gazebo>
 
   <gazebo reference="wheel_right_link">
@@ -176,13 +176,13 @@
     <minDepth>0.001</minDepth>
     <maxVel>0.1</maxVel>
     <fdir1>1 0 0</fdir1>
-    <material>Gazebo/FlatBlack</material>
+    <material>Gazebo/Flatdark</material>
   </gazebo>
   
   <gazebo reference="caster_wheel_link">
     <mu1>0.1</mu1>
     <mu2>0.1</mu2>
-    <material>Gazebo/FlatBlack</material>
+    <material>Gazebo/Flatdark</material>
   </gazebo>
   
   <xacro:if value="$(arg use_ros2_control)">

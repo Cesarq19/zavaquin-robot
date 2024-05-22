@@ -1,6 +1,5 @@
 <?xml version="1.0" ?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
-
     <!-- Imu sensor  -->
     <link name="imu_link">
         <inertial>
@@ -19,8 +18,8 @@
             <geometry>
                 <mesh filename="package://zavaquin_description/meshes/imu_link.STL" />
             </geometry>
-            <material name="">
-                <color rgba="0.827450980392157 0.83921568627451 0.827450980392157 1" />
+            <material name="dark">
+                <color rgba="0.01960784313 0.01960784313 0.01960784313 0.8" />
             </material>
         </visual>
         <collision>
@@ -34,7 +33,7 @@
     <joint name="imu_joint" type="fixed">
         <parent link="base_link"/>
         <child link="imu_link"/>
-        <origin xyz="-0.0390281436839592 0.0549871759093349 0.010774999999999" rpy="0 0 {-pi/2}"/> 
+        <origin xyz="-0.0390281436839592 0.0549871759093349 0.010774999999999" rpy="0 0 ${-pi/2}"/> 
         <axis xyz="0 0 0" />
     </joint>
 

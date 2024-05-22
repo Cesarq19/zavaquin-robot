@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
-
+    
     <link name="laser_link">
         <inertial>
             <origin xyz="-0.000108850676728708 1.1004985988522E-05 -0.0112166143877991" rpy="0 0 0" />
@@ -18,8 +18,8 @@
             <geometry>
               <mesh filename="package://zavaquin_description/meshes/laser_link.STL" />
             </geometry>
-            <material name="">
-              <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+            <material name="dark">
+                <color rgba="0.01960784313 0.01960784313 0.01960784313 0.8" />
             </material>
         </visual>
         <collision>
