@@ -12,7 +12,7 @@ def generate_launch_description():
     zavaquin_description_share = os.path.join(get_package_prefix("zavaquin_description"), "share")
     gazebo_ros_dir = get_package_share_directory("gazebo_ros")
 
-    model_path = os.path.join(zavaquin_description_dir, "urdf", "ZavaQuin.urdf.xacro")
+    model_path = os.path.join(zavaquin_description_dir, "urdf", "zavaquin.urdf.xacro")
     model_arg = DeclareLaunchArgument(
         name="ZavaQuin",
         default_value=model_path,
