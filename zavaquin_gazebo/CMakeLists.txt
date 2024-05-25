@@ -5,7 +5,7 @@ find_package(ament_cmake REQUIRED)
 find_package(urdf REQUIRED)
 
 install(
-  DIRECTORY config launch worlds
+  DIRECTORY config launch worlds urdf
   DESTINATION share/${PROJECT_NAME}
 )
 
