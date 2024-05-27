@@ -166,8 +166,8 @@
       <update_rate>1</update_rate>
       <left_joint>wheel_left_joint</left_joint>
       <right_joint>wheel_right_joint</right_joint>
-      <wheel_separation>0.229</wheel_separation>
-      <wheel_diameter>0.072</wheel_diameter>
+      <wheel_separation>0.270</wheel_separation>
+      <wheel_diameter>0.1</wheel_diameter>
 
       <!-- Limits (can be adjusted later on)-->
       <max_wheel_torque>20</max_wheel_torque>
