@@ -22,9 +22,9 @@
 
   <link name="base_link">
     <inertial>
-      <origin xyz="-0.000260364695511453 0.00187283839491649 0.044474815477357" rpy="0 0 0" />
+      <origin xyz="-0.0021958 -0.00035059 0.044357" rpy="0 0 0" />
       <mass value="4.4576232231282" />
-      <inertia ixx="0.0442662275832894" ixy="-2.15146521458688E-05" ixz="-2.28143383757141E-07" iyy="0.029789050471583" iyz="-3.51221173367627E-05" izz="0.07249409145326" />
+      <inertia ixx="0.029793" ixy="2.1519E-05" ixz="3.5124E-05" iyy="0.044269" iyz="-2.2708E-07" izz="0.072501" />
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
@@ -43,9 +43,9 @@
 
   <link name="wheel_left_link">
     <inertial>
-      <origin xyz="0 0 -0.00015430903826355" rpy="0 0 0" />
+      <origin xyz="2.7756E-17 0 -0.015154" rpy="0 0 0" />
       <mass value="0.190866532892921" />
-      <inertia ixx="0.000153745462220156" ixy="-1.87226503814821E-21" ixz="-1.25042522522111E-19" iyy="0.000153745462220156" iyz="-2.35718360863885E-21" izz="0.000277717161348545" />
+      <inertia ixx="0.00015375" ixy="-1.8747E-21" ixz="-1.2515E-19" iyy="0.00015375" iyz="-2.3486E-21" izz="0.00027772" />
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
@@ -63,7 +63,7 @@
   </link>
 
   <joint name="wheel_left_joint" type="continuous">
-    <origin xyz="0.13319 0.18268 0.04" rpy="-1.5708 0 -1.5708" />
+    <origin xyz="-0.18268 0.14819 0.04" rpy="-1.5708 0 0" />
     <parent link="base_link" />
     <child link="wheel_left_link" />
     <axis xyz="0 0 1" />
@@ -71,9 +71,9 @@
 
   <link name="wheel_right_link">
     <inertial>
-      <origin xyz="0 0 0.00015430903826355" rpy="0 0 0" />
+      <origin xyz="-2.7756E-17 0 0.015154" rpy="0 0 0" />
       <mass value="0.190866532892921" />
-      <inertia ixx="0.000153745462220156" ixy="-1.4319617412795E-21" ixz="-1.24760368762001E-19" iyy="0.000153745462220156" iyz="-2.45020547725608E-21" izz="0.000277717161348545" />
+      <inertia ixx="0.00015375" ixy="-1.4203E-21" ixz="-1.2479E-19" iyy="0.00015375" iyz="-2.4414E-21" izz="0.00027772" />
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
@@ -91,7 +91,7 @@
   </link>
 
   <joint name="wheel_right_joint" type="continuous">
-    <origin xyz="-0.13681 0.18268 0.04" rpy="-1.5708 0 -1.5708" />
+    <origin xyz="-0.18268 -0.15181 0.04" rpy="-1.5708 0 0" />
     <parent link="base_link" />
     <child link="wheel_right_link" />
     <axis xyz="0 0 1" />
@@ -99,9 +99,9 @@
 
   <link name="caster_wheel_link">
     <inertial>
-      <origin xyz="-2.77555756156289E-17 -2.77555756156289E-17 0" rpy="0 0 0" />
+      <origin xyz="-2.7756E-17 0 2.7756E-17" rpy="0 0 0" />
       <mass value="0.113097335529233" />
-      <inertia ixx="4.07150407905237E-05" ixy="0" ixz="1.94368867832977E-37" iyy="4.07150407905237E-05" iyz="1.24653860953172E-21" izz="4.07150407905237E-05" />
+      <inertia ixx="4.0715E-05" ixy="1.9437E-37" ixz="0" iyy="4.0715E-05" iyz="-1.2465E-21" izz="4.0715E-05" />
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
@@ -119,11 +119,12 @@
   </link>
 
   <joint name="caster_wheel_joint" type="fixed">
-    <origin xyz="-4.4845E-05 -0.16235 0.018397" rpy="-1.5708 0 -1.5708" />
+    <origin xyz="0.16235 -4.4845E-05 0.018397" rpy="0 0 0" />
     <parent link="base_link" />
     <child link="caster_wheel_link" />
     <axis xyz="0 0 0" />
-    <limit lower="0" upper="0" effort="0" velocity="0" />
+    <!-- <limit lower="0" upper="0" effort="0" velocity="0" /> -->
+    <dynamics damping="0.01" friction="0.0"/>
   </joint>
 
   <!-- Configuration Wheels -->
@@ -135,7 +136,6 @@
     <minDepth>0.001</minDepth>
     <maxVel>0.1</maxVel>
     <fdir1>1 0 0</fdir1>
-    <material>Gazebo/Flatdark</material>
   </gazebo>
 
   <gazebo reference="wheel_right_link">
@@ -146,15 +146,25 @@
     <minDepth>0.001</minDepth>
     <maxVel>0.1</maxVel>
     <fdir1>1 0 0</fdir1>
-    <material>Gazebo/Flatdark</material>
   </gazebo>
 
   <gazebo reference="caster_wheel_link">
     <mu1>0.1</mu1>
     <mu2>0.1</mu2>
-    <material>Gazebo/Flatdark</material>
   </gazebo>
+
   <gazebo>
+    <plugin name="zavaquin_joint_state" filename="libgazebo_ros_joint_state_publisher.so">
+      <ros>
+        <remapping>~/out:=joint_states</remapping>
+        <remapping>/tf:=tf</remapping>
+      </ros>
+      <update_rate>30</update_rate>
+      <joint_name>wheel_right_joint</joint_name>
+      <joint_name>wheel_left_joint</joint_name>
+      <joint_name>caster_wheel_joint</joint_name>
+    </plugin>
+
     <plugin name="zavaquin_diff_drive" filename="libgazebo_ros_diff_drive.so">
       <ros>
         <namespace></namespace>
@@ -167,7 +177,7 @@
       <left_joint>wheel_left_joint</left_joint>
       <right_joint>wheel_right_joint</right_joint>
       <wheel_separation>0.270</wheel_separation>
-      <wheel_diameter>0.1</wheel_diameter>
+      <wheel_diameter>0.100</wheel_diameter>
 
       <!-- Limits (can be adjusted later on)-->
       <max_wheel_torque>20</max_wheel_torque>
@@ -183,8 +193,8 @@
     </plugin>
   </gazebo>
 
-  <xacro:include filename="$(find zavaquin_description)/urdf/camera.xacro"/>
-  <xacro:include filename="$(find zavaquin_description)/urdf/imu.xacro"/>
-  <xacro:include filename="$(find zavaquin_description)/urdf/lidar.xacro"/>
+  <xacro:include filename="$(find zavaquin_description)/urdf/sensors/camera.xacro"/>
+  <xacro:include filename="$(find zavaquin_description)/urdf/sensors/imu.xacro"/>
+  <xacro:include filename="$(find zavaquin_description)/urdf/sensors/lidar.xacro"/>
   <xacro:include filename="$(find zavaquin_gazebo)/urdf/include/zavaquin_materials.xacro"/>
 </robot>

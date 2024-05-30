@@ -31,7 +31,7 @@ def generate_launch_description():
         default=os.path.join(
             get_package_share_directory('zavaquin_navigation'),
             'map',
-            'map.yaml'))
+            'ramel.yaml'))
 
     param_file_name =  'zavaquin.yaml'
     param_dir = LaunchConfiguration(
